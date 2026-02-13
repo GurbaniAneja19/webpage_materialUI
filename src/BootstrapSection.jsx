@@ -1,27 +1,26 @@
-const BootstrapSection = () => (
-  <section id="bootstrap" className="container py-5">
-    <h2 className="text-center mb-4">Bootstrap Section</h2>
-    <div className="row g-4">
-      <div className="col-md-4">
-        <div className="card p-3 shadow">
-          <h5>Responsive Layout</h5>
-          <p>Bootstrap’s grid makes layouts easy.</p>
-        </div>
-      </div>
-      <div className="col-md-4">
-        <div className="card p-3 shadow">
-          <h5>Components</h5>
-          <p>Cards, buttons, and more.</p>
-        </div>
-      </div>
-      <div className="col-md-4">
-        <div className="card p-3 shadow">
-          <h5>Utilities</h5>
-          <p>Spacing, colors, alignment.</p>
-        </div>
-      </div>
+function BootstrapSection() {
+  return (
+    <div style={styles.card}>
+      <h1>My Projects 🚀</h1>
+
+      <h3>📊 Netflix Data Analysis</h3>
+      <p>Performed data cleaning, visualization and insights using Python.</p>
+
+      <h3>🤖 Netflix Recommendation System</h3>
+      <p>Built a recommendation model using machine learning techniques.</p>
     </div>
-  </section>
-);
+  );
+}
+
+const styles = {
+  card: {
+    margin: "50px auto",
+    width: "70%",
+    padding: "40px",
+    background: "white",
+    borderRadius: "15px",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.1)"
+  }
+};
 
 export default BootstrapSection;

@@ -1,27 +1,27 @@
-import { Card, CardContent, Typography, Grid } from "@mui/material";
+function MaterialSection() {
+  return (
+    <div style={styles.card}>
+      <h1>My Skills 💡</h1>
 
-const MaterialSection = () => (
-  <section id="material" style={{ padding: "4rem 1rem", background: "#f0f0f0" }}>
-    <Typography variant="h4" align="center" gutterBottom>
-      Material UI Section
-    </Typography>
-    <Grid container spacing={3} justifyContent="center">
-      {[
-        { title: "MUI Cards", desc: "Clean and modern UI components." },
-        { title: "Grid System", desc: "Responsive layout using MUI Grid." },
-        { title: "Theme Ready", desc: "Easy to customize themes." },
-      ].map(({ title, desc }) => (
-        <Grid item xs={12} md={4} key={title}>
-          <Card>
-            <CardContent>
-              <Typography variant="h6">{title}</Typography>
-              <Typography variant="body2">{desc}</Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      ))}
-    </Grid>
-  </section>
-);
+      <p>✔ Python</p>
+      <p>✔ Machine Learning</p>
+      <p>✔ Data Analysis</p>
+      <p>✔ React JS</p>
+      <p>✔ SQL</p>
+      <p>✔ Algorithms & DSA</p>
+    </div>
+  );
+}
+
+const styles = {
+  card: {
+    margin: "50px auto",
+    width: "70%",
+    padding: "40px",
+    background: "#fff5f8",
+    borderRadius: "15px",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.1)"
+  }
+};
 
 export default MaterialSection;
